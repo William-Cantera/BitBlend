@@ -14,6 +14,7 @@ const NavItem: React.FC<TabSpec & TabLink> = ({
   name,
   url,
   mdFileName, // eslint-disable-line @typescript-eslint/no-unused-vars
+  component: Component,
   ...iconProps
 }) => {
   const classes = useStyles();

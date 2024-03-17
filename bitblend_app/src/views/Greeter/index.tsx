@@ -9,7 +9,7 @@ import SEO from '../../components/SEO';
 import { Static } from '../../models';
 import { randomHello } from '../../utils';
 import styles from './styles';
-import portrait from '../../images/william_cantera.jpg'
+import portrait from '../../images/william_cantera.jpg';
 
 const useStyles = createUseStyles(styles);
 
@@ -48,7 +48,13 @@ const Greeter: React.FC<GreeterProps> = ({
     <>
       <SEO title={hello} />
       <section className={classes.root}>
-        <img src={portrait}  alt="Portrait of myself" height="30%" width="auto" style={{ borderRadius: '20%', marginBottom: '50px' }}></img>
+        <img
+          src={portrait}
+          alt="Portrait of myself"
+          height="30%"
+          width="auto"
+          style={{ borderRadius: '20%', marginBottom: '50px' }}
+        ></img>
         <h1 className={classes.heading}>{staticData.mainLine}</h1>
         <div className={classes.typedWrap}>
           <span id="typed-insert-point" style={{ whiteSpace: 'pre' }} />

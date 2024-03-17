@@ -19,8 +19,13 @@ export default [
   pages.map(({ name, url, comp, ...rest }) => (
     <View path={url} key={name} comp={comp} {...rest} />
   )),
-  tabs.map(({ name, url, mdFileName }) => (
-    <Tab path={url} key={name} fileName={mdFileName} />
-  )),
+  tabs.map(({ name, url, mdFileName, component }) => {
+    if (mdFileName) {
+      return <Tab path={url} key={name} fileName={mdFileName} />;
+    } else if (component) {
+      return <View path={url} key={name} comp={component} />;
+    }
+    return null;
+  }),
   <Redirect key="notfound" from="*" to="/" default noThrow />,
 ];

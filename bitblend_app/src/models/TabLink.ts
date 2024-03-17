@@ -1,5 +1,6 @@
 import { TabSpec } from './TabSpec';
 
 export interface TabLink extends TabSpec {
-  mdFileName: string;
+  mdFileName?: string;
+  component?: React.ComponentType;
 }

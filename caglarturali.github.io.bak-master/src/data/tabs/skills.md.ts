@@ -1,3 +1,4 @@
+export const content = `
 ### Technical skills
 
 - [Odoo](https://www.odoo.com/) Development
@@ -37,4 +38,4 @@
 - Cycling 🚴‍♂️
 - Electronic music production 🎧
 - Entrepreneurship 👨🏻‍💻
-- Technical documentaries 🎥
+- Technical documentaries 🎥`;

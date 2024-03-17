@@ -7,6 +7,8 @@ import Container from '../Container';
 import { createUseStyles } from 'react-jss';
 import styles from './styles';
 
+import { content as markdownContent } from '../../data/tabs/skills.md';
+
 const useStyles = createUseStyles(styles);
 
 export interface MDTabProps {
@@ -14,19 +16,10 @@ export interface MDTabProps {
 }
 
 const MDTab: React.FC<MDTabProps> = ({ fileName }) => {
-  const [contents, setContents] = useState<string>('');
-
+  const [contents, setContents] = useState<string>(markdownContent);
   const classes = useStyles();
 
-  useEffect(() => {
-    const loadFile = async () => {
-      const file = await import(`../../data/tabs/${fileName}.md`);
-      const response = await fetch(file.default);
-      const text = await response.text();
-      setContents(text);
-    };
-    loadFile();
-  }, [fileName]);
+  // No need for useEffect or fetching the file
 
   return (
     <Container seo={{ title: fileName }}>

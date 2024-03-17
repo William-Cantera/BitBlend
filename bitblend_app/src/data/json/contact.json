@@ -1,0 +1,20 @@
+[
+  {
+    "name": "GitHub",
+    "url": "https://github.com/William-Cantera",
+    "icon": ["fab", "github"],
+    "isMain": false
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/william-cantera-462340249/",
+    "icon": ["fab", "linkedin"],
+    "isMain": false
+  },
+  {
+    "name": "MeritPages",
+    "url": "https://meritpages.com/William-Cantera",
+    "icon": ["fab", "leanpub"],
+    "isMain": false
+  }
+]

@@ -28,7 +28,7 @@ class About extends Component {
                   <img
                     height="250px"
                     src={profilepic}
-                    alt="Picture of Myself"
+                    alt="Avatar placeholder"
                   />
                   <Icon
                     icon={angularIcon}

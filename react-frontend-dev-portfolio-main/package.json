@@ -1,13 +1,13 @@
 {
-  "name": "cantera_app",
-  "homepage": "https://github.com/William-Cantera/BitBlend",
+  "name": "react-frontend-dev-portfolio",
+  "homepage": "https://dorota1997.github.io/react-frontend-dev-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-awesome-slider": "^4.1.0",
@@ -20,8 +20,8 @@
     "react-vertical-timeline-component": "^3.3.1"
   },
   "scripts": {
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

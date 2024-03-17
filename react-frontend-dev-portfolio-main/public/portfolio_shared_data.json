@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "name": "William Cantera",
-      "titles": [ "Full-Stack Developer", "Software Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Davina Griss",
+      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
       "social": [
         {
           "name": "github",
@@ -14,7 +14,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "william_cantera.jpg"
+      "image": "myProfile.jpg"
     },
     "skills": {
       "icons": [

@@ -1,10 +1,13 @@
+const { execFileSync } = require('child_process');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const { env } = require('process');
 
-const target = 'https://master.d12yk2hn6rz66e.amplifyapp.com/';
+const target =
+env.BACKEND_URL ? env.BACKEND_URL :
+env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
+env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'http://localhost:60367';
 
-//env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
-//  env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'http://localhost:60367';
+//'https://master.d12yk2hn6rz66e.amplifyapp.com/'; 
 
 const context = [
   "/weatherforecast",

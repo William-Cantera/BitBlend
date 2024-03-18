@@ -3,7 +3,21 @@
  */
 import { Styles } from 'react-jss';
 
+const theme = {
+  blue: {
+    default: '#3f51b5',
+    hover: '#283593',
+  },
+  pink: {
+    default: '#e91e63',
+    hover: '#ad1457',
+  },
+};
+
 export default {
+  button: {
+    margin: '10px',
+  },
   title: {
     display: 'inline-block',
     cursor: 'help',

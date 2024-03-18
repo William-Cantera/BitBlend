@@ -1,8 +1,12 @@
 {
   "metadata": {
-    "title": "Apprenticeship in Software Engineering",
-    "subtitle": "Specialization in Data Science",
-    "info": "Long story short, I've been thinking about pursuing a postgraduate degree in software engineering for a while now but, eventually, I've decided to go my way. So, here it is, my self-curated apprenticeship program in software engineering! I will be attending courses listed below and will be doing practical assignments throughout my studies but it won't necessarily be my priority to pursue any form of 'certificate of completion'. We'll all see how it goes. :)"
+    "title": "Bachelor of Science in Computer Science",
+    "subtitle": "Concentration in Artificial Intelligence and Machine Learning",
+    "info": "This is every math and computer science related course I completed at the University of Delaware for my undergraduate degree. Click the button below to download my transcript.",
+    "button": {
+      "text": "Download Transcript",
+      "url": "https://canteraimages.s3.us-east-2.amazonaws.com/misc/cantera_transcript.pdf"
+    }
   },
   "semesters": [
     {
@@ -402,6 +406,154 @@
     },
     {
       "name": "6. Semester",
+      "dates": {
+        "start": "2024-07-01",
+        "end": "2024-12-31"
+      },
+      "courses": [
+        {
+          "courseName": "DSC 560 Machine Learning",
+          "sections": [
+            {
+              "title": "Machine Learning Specialization",
+              "url": "https://www.coursera.org/specializations/machine-learning",
+              "progress": {
+                "completed": 0,
+                "total": 4
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 563 Applied Data Science",
+          "sections": [
+            {
+              "title": "Applied Data Science with Python Specialization",
+              "url": "https://www.coursera.org/specializations/data-science-python",
+              "progress": {
+                "completed": 0,
+                "total": 5
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 565 Computer Vision",
+          "sections": [
+            {
+              "title": "First Principles of Computer Vision Specialization",
+              "url": "https://www.coursera.org/specializations/firstprinciplesofcomputervision",
+              "progress": {
+                "completed": 0,
+                "total": 5
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 567 Autonomous Systems Engineering",
+          "sections": [
+            {
+              "title": "Self-Driving Cars Specialization",
+              "url": "https://www.coursera.org/specializations/self-driving-cars",
+              "progress": {
+                "completed": 0,
+                "total": 4
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "MAT 560 Mathematics for Machine Learning",
+          "sections": [
+            {
+              "title": "Mathematics for Machine Learning Specialization",
+              "url": "https://www.coursera.org/specializations/mathematics-machine-learning",
+              "progress": {
+                "completed": 0,
+                "total": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. Semester",
+      "dates": {
+        "start": "2024-07-01",
+        "end": "2024-12-31"
+      },
+      "courses": [
+        {
+          "courseName": "DSC 560 Machine Learning",
+          "sections": [
+            {
+              "title": "Machine Learning Specialization",
+              "url": "https://www.coursera.org/specializations/machine-learning",
+              "progress": {
+                "completed": 0,
+                "total": 4
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 563 Applied Data Science",
+          "sections": [
+            {
+              "title": "Applied Data Science with Python Specialization",
+              "url": "https://www.coursera.org/specializations/data-science-python",
+              "progress": {
+                "completed": 0,
+                "total": 5
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 565 Computer Vision",
+          "sections": [
+            {
+              "title": "First Principles of Computer Vision Specialization",
+              "url": "https://www.coursera.org/specializations/firstprinciplesofcomputervision",
+              "progress": {
+                "completed": 0,
+                "total": 5
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "DSC 567 Autonomous Systems Engineering",
+          "sections": [
+            {
+              "title": "Self-Driving Cars Specialization",
+              "url": "https://www.coursera.org/specializations/self-driving-cars",
+              "progress": {
+                "completed": 0,
+                "total": 4
+              }
+            }
+          ]
+        },
+        {
+          "courseName": "MAT 560 Mathematics for Machine Learning",
+          "sections": [
+            {
+              "title": "Mathematics for Machine Learning Specialization",
+              "url": "https://www.coursera.org/specializations/mathematics-machine-learning",
+              "progress": {
+                "completed": 0,
+                "total": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "8. Semester",
       "dates": {
         "start": "2024-07-01",
         "end": "2024-12-31"

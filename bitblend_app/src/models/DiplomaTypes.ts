@@ -1,9 +1,16 @@
 export declare namespace DiplomaTypes {
+  export interface Button {
+    text: string;
+    url: string;
+  }
+
   export interface Metadata {
     title: string;
     subtitle?: string;
     info?: string;
+    button?: Button;
   }
+
   export interface Section {
     title: string;
     url: string;

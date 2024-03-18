@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Diploma from '../Diploma';
-import sweData from '../../data/json/swe.json';
+import sweData from '../../data/json/university.json';
 import staticData from '../../data/json/static.json';
 
 // Workaround for react-tooltip's randomly generated UUIDs.

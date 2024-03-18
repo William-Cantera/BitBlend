@@ -6,12 +6,12 @@
 
 import fs from 'fs';
 import path from 'path';
-import sweData from '../src/data/json/swe.json';
+import sweData from '../src/data/json/university.json';
 import { execCommandsAndCommit } from './utils';
 
 const srcPath = path.join(__dirname, '..', 'src');
 const paths = {
-  diploma: path.join(srcPath, 'data', 'json', 'swe.json'),
+  diploma: path.join(srcPath, 'data', 'json', 'university.json'),
   snapshots: path.join(srcPath, 'views', '__tests__', '__snapshots__'),
 };
 

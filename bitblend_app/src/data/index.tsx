@@ -6,18 +6,23 @@ import { jsOrange, midBlue, green, pink, red, purple } from '../theme/colors';
 
 import staticData from './json/static.json';
 import contactData from './json/contact.json';
-import sweData from './json/swe.json';
-import baData from './json/ba.json';
+import university from './json/university.json';
+import experiences from './json/experiences.json';
 import pkg from '../../package.json';
 
 import { calculateDiplomaProgress } from '../utils';
 import ContactForm from '../components/HtmlTab/Contact';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faBriefcase,
+  faRandom,
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(faEnvelope);
 library.add(faBriefcase);
+library.add(faRandom);
 
 export const pages: PageLink[] = [
   {
@@ -35,19 +40,18 @@ export const pages: PageLink[] = [
   },
   {
     name: 'Software Engineering',
-    url: '/swe',
+    url: '/university',
     icon: 'graduation-cap',
     isInternal: true,
-    badge: `${calculateDiplomaProgress(sweData, 0)}%`,
-    comp: () => <Diploma diplomaData={sweData} />,
+    badge: `${calculateDiplomaProgress(university, 0)}%`,
+    comp: () => <Diploma diplomaData={university} />,
   },
   {
-    name: 'Business Administration',
-    url: '/ba',
-    icon: 'graduation-cap',
+    name: 'Experiences',
+    url: '/experiences',
+    icon: 'random',
     isInternal: true,
-    badge: `${calculateDiplomaProgress(baData, 0)}%`,
-    comp: () => <Diploma diplomaData={baData} />,
+    comp: () => <Diploma diplomaData={experiences} />,
   },
 ];
 

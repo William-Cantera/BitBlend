@@ -2,7 +2,7 @@ import React from 'react';
 import Greeter from '../views/Greeter';
 import Diploma from '../views/Diploma';
 import { PageLink, TabLink } from '../models';
-import { jsOrange, midBlue, green, pink, red } from '../theme/colors';
+import { jsOrange, midBlue, green, pink, red, purple } from '../theme/colors';
 
 import staticData from './json/static.json';
 import contactData from './json/contact.json';
@@ -14,9 +14,10 @@ import { calculateDiplomaProgress } from '../utils';
 import ContactForm from '../components/HtmlTab/Contact';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faEnvelope);
+library.add(faBriefcase);
 
 export const pages: PageLink[] = [
   {
@@ -57,6 +58,13 @@ export const tabs: TabLink[] = [
     icon: ['fab', 'js'],
     color: jsOrange,
     mdFileName: 'skills',
+  },
+  {
+    name: 'career.docx',
+    url: '/career',
+    icon: faBriefcase,
+    color: purple,
+    mdFileName: 'career',
   },
   {
     name: '.educationrc',

@@ -1,41 +1,65 @@
 export const content = `
 ### Technical skills
 
-- [Odoo](https://www.odoo.com/) Development
 - Web Development (End-to-End)
-- Mobile Development (Hybrid/Native)
-- Game Development (Unity 3D)
-- VR Development (Unity 3D)
-- Web Design
-- 3D Modelling / Animation
+- Mobile Development (Android)
+- Cloud Services (AWS, Google Cloud)
+- Web UI Design
+- [Web Content Accessibility Guidline (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- Shell Scripting and automated Cron jobs
+- Technical Documentation and Presenting
 
-### Programming languages / tech stacks
+### Programming languages and Frameworks 
 
-- In modern times:
-  - Python
-  - Dart (w/ Flutter)
+- Recently:
+  - Java (3+ years)
+    - Spring Boot, Hibernate
+  - PostgreSQL (3+ years)
+  - Python (3+ years)
+  - Bash, Zsh
   - JavaScript/TypeScript (3+ years)
+    - Ajax
     - React.js
+    - Handlebars
     - Node.js
-    - Express.js
-    - MongoDB
-  - Golang (newcomer)
-- In ancient times:
-  - Java (~1 year)
-  - C#/.NET (3+ years)
-  - PHP/MySQL (~3 years)
+    - Postgresql
+  - Rust (newcomer)
+  - C# (newcomer)
+  - Kotlin (newcomer)
+- It's been a while:
+  - C/C++
+  - Racket
+  - Lisp
 
-### Preferences 🙏
+### Operating Systems
+- Windows
+- Linux
+- MacOS
 
-- [Debian derivatives](https://www.debian.org/) || [Fedora](https://getfedora.org/) 🐧
-- [Zshell](https://en.wikipedia.org/wiki/Z_shell) ([Oh My Zsh](https://ohmyz.sh/)) 💻
-- [VSCode](https://code.visualstudio.com/) ¯\\_(ツ)_/¯
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ⌨️
+### Other Technologies
 
-### Special interests 👌
+- Cloud Related
+  - AWS
+    - Lambda, S3, EC2, RDS, WAF, Cognito, Amplify, Cloud9 
+  - Microsoft Sql Server
+  - Firebase
+  - Datadog
+- Other
+  - Apache Tomcat 
+  - Atlassian Tool Suite (Jira, Bamboo)
+  - Microsoft Teams
+  - Microsoft Excel
 
-- [Virtual] Aviation ✈
-- Cycling 🚴‍♂️
-- Electronic music production 🎧
-- Entrepreneurship 👨🏻‍💻
-- Technical documentaries 🎥`;
+### Preferences 
+ 
+- [VSCode](https://code.visualstudio.com/) 
+- [JetBrains Intellij](https://www.jetbrains.com/idea/) 
+
+### Special interests
+
+- Running
+- Cycling 
+- Hiking
+- Attending Conferences
+- Finance 
+- New and emerging technologies`;

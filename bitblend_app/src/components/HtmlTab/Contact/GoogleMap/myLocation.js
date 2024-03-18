@@ -33,6 +33,9 @@ const LocationMap = ({ latitude, longitude }) => {
           overflow: 'hidden',
         }}
       >
+        <h1 style={{ color: 'white', fontSize: '20px' }}>
+          My Current Area of Inhabitance
+        </h1>
         <EmbeddedMap
           googleMapURL={mapUrl}
           loadingElement={<div style={{ height: '100%' }} />}

@@ -1,6 +1,9 @@
 import { Styles } from 'react-jss';
 
 export default {
+  contactInfo: {
+    marginTop: '20px',
+  },
   form: {
     display: 'flex',
     flexDirection: 'column',

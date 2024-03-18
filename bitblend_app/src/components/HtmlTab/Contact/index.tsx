@@ -6,12 +6,14 @@ import LocationMap from './GoogleMap/myLocation';
 
 const ContactForm = () => {
   const [fromName, setFromName] = useState('');
-  const [email, setEmail] = useState('');
+  const [fromEmail, setFromEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+
+    console.log(e.target);
 
     // Send email using EmailJS
     emailjs
@@ -27,7 +29,7 @@ const ContactForm = () => {
           setEmailSent(true);
           // Clear form fields
           setFromName('');
-          setEmail('');
+          setFromEmail('');
           setMessage('');
 
           setTimeout(() => {
@@ -46,7 +48,7 @@ const ContactForm = () => {
   const latitude = 38.712742;
   const longitude = -90.468154;
   return (
-    <div>
+    <div className={classes.contactInfo}>
       <LocationMap latitude={latitude} longitude={longitude} />
       <form onSubmit={handleSubmit} className={classes.form}>
         <p className={classes.p}>
@@ -55,8 +57,9 @@ const ContactForm = () => {
         </p>
         <div className={classes.inputGroup}>
           <input
+            id="fromName"
             type="text"
-            name="from_name"
+            name="fromName"
             placeholder="Your Name"
             value={fromName}
             onChange={(e) => setFromName(e.target.value)}
@@ -65,17 +68,19 @@ const ContactForm = () => {
         </div>
         <div className={classes.inputGroup}>
           <input
-            type="email"
-            name="email"
+            id="email"
+            type="fromEmail"
+            name="fromEmail"
             placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={fromEmail}
+            onChange={(e) => setFromEmail(e.target.value)}
             required
             className={classes.input}
           />
         </div>
         <div className={classes.inputGroup}>
           <textarea
+            id="message"
             name="message"
             placeholder="Your Message"
             value={message}

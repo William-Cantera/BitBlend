@@ -11,4 +11,4 @@ public class MathController : ControllerBase
         var result = Math.Sqrt(9);
         return Ok(result);
     }
-}
+} // </^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json)$)([^.]+$)/>

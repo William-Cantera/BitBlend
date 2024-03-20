@@ -28,10 +28,18 @@ app.UseRouting();
 
 app.UseCors("AllowSpecificOrigin"); // Use CORS
 
+#pragma warning disable ASP0014 // Suggest using top level route registrations
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
+    endpoints.MapControllerRoute(
+        name: "api",
+        pattern: "api/{controller}/{action=Index}/{id?}"); // Define API route
+
+    // For other routes, fall back to index.html
+    endpoints.MapFallbackToFile("index.html");
 });
+#pragma warning restore ASP0014 // Suggest using top level route registrations
 
 // Remove the custom middleware that rewrites requests to "/index.html"
 // as it may interfere with API requests.
@@ -40,6 +48,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
-app.MapFallbackToFile("index.html");
 
 app.Run();

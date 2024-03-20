@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { createUseStyles } from 'react-jss';
 import styles from './styles';
@@ -9,6 +9,26 @@ const ContactForm = () => {
   const [fromEmail, setFromEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSent, setEmailSent] = useState(false);
+
+  const [result, setResult] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/Math/sqrt', {
+          method: 'get',
+          headers: { 'Content-Type': 'application/json' },
+        });
+        const data = await response.json();
+        setResult(data);
+        console.log('root: ' + data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();

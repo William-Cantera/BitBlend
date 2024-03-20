@@ -28,6 +28,22 @@ app.UseCors("AllowSpecificOrigin"); // Use CORS
 
 app.UseRouting();
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
+app.Use((context, next) =>
+{
+    if (!context.Request.Path.StartsWithSegments("/api"))
+    {
+        context.Request.Path = "/index.html";
+    }
+    return next();
+});
+
+app.UseStaticFiles();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");

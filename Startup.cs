@@ -24,25 +24,17 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseCors("AllowSpecificOrigin"); // Use CORS
-
 app.UseRouting();
+
+app.UseCors("AllowSpecificOrigin"); // Use CORS
 
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
 
-app.Use((context, next) =>
-{
-    if (!context.Request.Path.StartsWithSegments("/api"))
-    {
-        context.Request.Path = "/index.html";
-    }
-    return next();
-});
-
-app.UseStaticFiles();
+// Remove the custom middleware that rewrites requests to "/index.html"
+// as it may interfere with API requests.
 
 app.MapControllerRoute(
     name: "default",

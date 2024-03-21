@@ -34,7 +34,6 @@ app.UseEndpoints(endpoints =>
         name: "api",
         pattern: "api/{controller}/{action}");
 
-    endpoints.MapFallbackToFile("index.html");
 });
 #pragma warning restore ASP0014 // Suggest using top level route registrations
 

@@ -15,10 +15,7 @@ const ContactForm = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/Math/sqrt', {
-          method: 'get',
-          headers: { 'Content-Type': 'application/json' },
-        });
+        const response = await fetch('/api/Math/sqrt');
         const data = await response.json();
         setResult(data);
         console.log('root: ' + data);

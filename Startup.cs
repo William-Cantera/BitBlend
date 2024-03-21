@@ -6,7 +6,7 @@ builder.Services.AddControllersWithViews();
 // Add CORS configuration
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin",
+    options.AddPolicy("AllowAllOrigins",
         builder => builder.WithOrigins(
         "https://master.d12yk2hn6rz66e.amplifyapp.com",
         "https://www.wfcantera.link/")

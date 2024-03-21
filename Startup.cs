@@ -8,8 +8,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
         builder => builder.WithOrigins(
-        "https://master.d12yk2hn6rz66e.amplifyapp.com	",
-        "https://www.wfcantera.link")
+        "https://master.d12yk2hn6rz66e.amplifyapp.com",
+        "https://www.wfcantera.link/")
             .AllowAnyMethod()
             .AllowAnyHeader());
 });

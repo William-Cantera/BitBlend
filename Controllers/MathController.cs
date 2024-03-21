@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 public class MathController : ControllerBase
 {
-    [HttpPost("sqrt")]
+    [HttpGet("sqrt")]
     [Produces("application/json")]
     public IActionResult GetSquareRoot()
     {

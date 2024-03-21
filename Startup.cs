@@ -17,14 +17,13 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHsts();
-}
+//if (!app.Environment.IsDevelopment())
+//{
+app.UseHsts();
+//}
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseCors("AllowSpecificOrigin");
 app.UseStaticFiles();
 
 #pragma warning disable ASP0014 // Suggest using top level route registrations

@@ -16,7 +16,7 @@ const ContactForm = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'https://www.wfcantera.link/api/Math/sqrt',
+          'https://master.d12yk2hn6rz66e.amplifyapp.com/api/Math/sqrt',
           {
             method: 'get',
             headers: { 'Content-Type': 'application/json' },
